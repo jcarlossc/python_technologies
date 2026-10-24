@@ -1,4 +1,4 @@
-# 🐍 Tecnologias Python
+# 🐍 Tecnologias Python para Engenharia de dados
 
 ## 1. Desenvolvimento regular — dependências de produção
 
@@ -246,3 +246,244 @@
 | refurb | Sugere melhorias e expressões mais idiomáticas em Python. |
 | vulture | Procura código potencialmente não utilizado.
 | codespell | Detecta erros de grafia em código e documentação. |
+
+### 2.3. Tipagem estática e análise
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| mypy | Verifica tipos estáticos em Python. |
+| Pyright | Análise estática e verificação de tipos. |
+| basedpyright | Variante do Pyright com verificações adicionais. |
+| Pyre | Verificador de tipos estáticos para Python. |
+| MonkeyType | Ajuda a inferir anotações de tipo com base na execução. |
+| stubgen | Gera stubs de tipagem para módulos Python, disponível no ecossistema mypy. |
+| types-requests | Tipagens para requests. |
+| types-PyYAML | Tipagens para PyYAML. |
+| pandas-stubs | Tipagens para melhorar a análise estática de código que utiliza Pandas. |
+| types-python-dateutil | Tipagens para python-dateutil. |
+
+### 2.4. Debug e desenvolvimento interativo
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| python | Terminal Python interativo aprimorado. |
+| ipykernel | Kernel Python para notebooks. |
+| jupyterlab | Ambiente interativo para exploração e experimentação de dados. |
+| notebook | Ambiente Jupyter Notebook clássico. |
+| debugpy | Depuração de Python por IDEs e editores. |
+| pdb | Depurador incluído na biblioteca padrão do Python. |
+| icecream | Ajuda a inspecionar valores durante a depuração. |
+| memray | Analisa alocações de memória em aplicações Python. |
+| py-spy | Profiler para investigar o desempenho de programas Python. |
+| scalene | Profiler de CPU e memória para Python. |
+| line-profiler | Mede o tempo gasto em linhas de funções selecionadas. |
+
+### 2.5. Pré-commit, automação e hooks
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| pre-commit | Executa verificações automáticas antes de commits. |
+| pre-commit-hooks | Hooks prontos para detectar problemas como espaços indevidos e arquivos não finalizados corretamente. |
+| commitizen | Ajuda a padronizar mensagens de commit e versões. |
+| Commitlint | Valida mensagens de commit de acordo com regras configuradas. |
+| detect-secrets | Pode ser executado em hooks para evitar a inclusão de credenciais. |
+| nbstripout | Remove saídas de notebooks antes de armazená-los no Git, quando configurado. |
+
+### 2.6. Documentação
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Sphinx | Gera documentação técnica a partir de arquivos e docstrings. |
+| MkDocs | Gera sites de documentação a partir de Markdown. |
+| Material for MkDocs | Tema e recursos para documentação com MkDocs. |
+| pdoc | Gera documentação de APIs Python. |
+| mkdocstrings | Integra documentação de código ao MkDocs. |
+| sphinx-rtd-theme | Tema para documentação Sphinx. |
+| interrogate | Verifica a cobertura de docstrings. |
+| docformatter | Formata docstrings Python. |
+| myst-parser | Permite usar Markdown na documentação Sphinx. |
+| towncrier | Monta changelogs a partir de fragmentos de alterações. |
+
+### 2.7. Build, publicação e versionamento de pacotes
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Poetry | Gerencia dependências, ambientes e empacotamento Python. |
+| build | Constrói distribuições Python, como wheel e sdist. |
+| twine | Valida e publica distribuições em repositórios como PyPI. |
+| setuptools | Ferramenta de build e empacotamento Python. |
+| wheel | Suporte ao formato de distribuição wheel. |
+| hatch | Ferramenta de build e gerenciamento de ambientes. |
+| hatchling | Backend de build do ecossistema Hatch. |
+| Flit | Ferramenta de empacotamento Python. |
+| PDM | Gerenciamento de dependências e projetos Python. |
+| uv | Gerenciamento rápido de dependências, ambientes e ferramentas Python. |
+| pip-tools | Gera arquivos de dependências fixadas a partir de requisitos. |
+| bump-my-version | Automatiza a atualização de versões. |
+| semantic-release | Automatiza releases seguindo regras de versionamento semântico. |
+| Commitizen | Também pode automatizar changelogs e versionamento com configuração apropriada. |
+
+### 2.8. CI/CD e automação de entrega
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| GitHub Actions | Executa testes, lint, builds e publicações em workflows. |
+| GitLab | CI/CD	Automatiza validação e entrega em pipelines GitLab. |
+| Jenkins | Servidor de automação de builds e pipelines. |
+| Azure | Pipelines	CI/CD no ecossistema Azure DevOps. |
+| pre-commit.ci | Automatiza verificações e correções de hooks em repositórios compatíveis. |
+| act | Executa localmente muitos workflows do GitHub Actions com Docker. |
+| Release Please | Automatiza criação de releases e atualização de changelogs com base em commits convencionais. |
+| Renovate | Automatiza propostas de atualização de dependências. |
+| Dependabot | Abre pull requests para atualizar dependências e tratar alertas compatíveis. |
+
+### 2.9. Segurança e auditoria no desenvolvimento
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Bandit | Analisa código Python em busca de problemas de segurança. |
+| pip-audit | Verifica vulnerabilidades conhecidas em dependências Python. |
+| Safety | Verificação de vulnerabilidades em dependências, conforme os recursos e condições de uso da ferramenta. |
+| Semgrep | Análise estática de código com regras de segurança e qualidade. |
+| CodeQL | Análise de código para identificar vulnerabilidades e outros problemas. |
+| Gitleaks | Detecta possíveis segredos em repositórios e histórico Git. |
+| detect-secrets | Detecta possíveis credenciais e segredos em arquivos. |
+| Checkov | Analisa configurações de infraestrutura como código. |
+| Trivy | Analisa imagens de containers, dependências e configurações em busca de vulnerabilidades.v
+| pip-licenses | Ajuda a inspecionar licenças das dependências instaladas. |
+
+### 2.10. Testes de integração, bancos e migrações
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Alembic | Controla migrações de schema de bancos SQLAlchemy. |
+| SQLFluff | Analisa e formata SQL. |
+| SQLGlot | Analisa, transforma e transpila SQL entre dialetos. |
+| dbt-fusion | Motor de execução do ecossistema dbt, com recursos e disponibilidade próprios; não é equivalente a uma simples biblioteca de testes. |
+| pytest-docker | Auxilia testes que dependem de ambientes Docker, conforme a configuração. |
+| pytest-postgresql | Facilita testes com PostgreSQL. |
+| pytest-mysql | Integração para testes com MySQL, conforme o plugin e a configuração usados. |
+
+### 2.11. Ferramentas para desenvolvimento de DAGs e pipelines
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| apache-airflow-providers-standard | Operadores e componentes padrão do Airflow em versões que utilizam esse pacote de provider. |
+| apache-airflow-providers-postgres | Integrações do Airflow com PostgreSQL. |
+| apache-airflow-providers-mysql | Integrações do Airflow com MySQL. |
+| apache-airflow-providers-amazon | Integrações do Airflow com serviços AWS. |
+| apache-airflow-providers-google | Integrações do Airflow com serviços Google Cloud. |
+| apache-airflow-providers-apache-spark | Integrações do Airflow com Apache Spark. |
+| apache-airflow-providers-apache-kafka | Integrações relacionadas ao Kafka nas versões compatíveis. |
+| apache-airflow-providers-http | Operadores e hooks HTTP. |
+| apache-airflow-providers-docker | Execução e integração com containers Docker. |
+| apache-airflow-providers-slack | Integrações para notificações via Slack. |
+
+> Atenção: os providers do Airflow devem ser escolhidos de acordo com os serviços utilizados e a versão instalada. O Airflow também possui requisitos específicos de dependências; não é recomendável instalar uma versão arbitrária junto com todas as outras.
+
+## 3. Tecnologias complementares que não são apenas pacotes Python
+
+### 3.1. Bancos, armazenamento e plataformas analíticas
+
+> São importantes em Engenharia de Dados, mas não devem ser tratadas automaticamente como dependências main ou dev do Poetry.
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| PostgreSQL | Banco relacional para aplicações e dados analíticos. |
+| MySQL | Banco relacional para sistemas transacionais e pipelines. |
+| SQL Server | Banco relacional da Microsoft. |
+| Oracle Database | Banco relacional empresarial. |
+| MongoDB | Banco documental NoSQL. |
+| Cassandra | Banco distribuído orientado a colunas largas. |
+| Redis | Armazenamento em memória, cache e estruturas de dados. |
+| Elasticsearch | Busca e análise de documentos e eventos. |
+| OpenSearch | Plataforma de busca e análise de dados. |
+| ClickHouse | Banco colunar para consultas analíticas. |
+| Snowflake | Plataforma de dados e data warehouse na nuvem. |
+| BigQuery | Data warehouse gerenciado do Google Cloud. |
+| Amazon Redshift | Data warehouse da AWS. |
+| Databricks | Plataforma de engenharia de dados, lakehouse e analytics. |
+| Microsoft Fabric | Plataforma integrada de dados, analytics e BI. |
+| Apache Hive | Infraestrutura SQL para dados em ecossistemas Hadoop compatíveis. |
+| Trino | Motor SQL distribuído para consultas em múltiplas fontes. |
+| Presto | Motor SQL distribuído para análise de dados. |
+| ClickHouse Cloud | Serviço gerenciado de analytics com ClickHouse. |
+
+### 3.2. Data Lake, Lakehouse e formatos
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Apache Parquet | Formato de arquivo colunar eficiente para analytics. |
+| Apache ORC | Formato colunar para armazenamento e consulta analítica. |
+| Apache Avro | Formato de serialização com schema. |
+| Apache Iceberg | Formato de tabela aberto para grandes conjuntos de dados analíticos. |
+| Delta Lake | Camada de armazenamento com transações e recursos de lakehouse. |
+| Apache Hudi | Plataforma de tabelas para ingestão incremental e gerenciamento de dados. |
+| Amazon S3 | Armazenamento de objetos usado frequentemente em data lakes. |
+| Azure Data Lake Storage | Armazenamento de dados analíticos na Azure. |
+| Google Cloud Storage | Armazenamento de objetos na Google Cloud. |
+| MinIO | Armazenamento de objetos compatível com APIs S3. |
+| Apache Hadoop HDFS | Sistema de arquivos distribuído do ecossistema Hadoop. |
+
+### 3.3. Streaming e computação distribuída
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Apache Kafka | Plataforma distribuída para eventos e streaming. |
+| Kafka Connect | Integra fontes e destinos ao Kafka por meio de conectores. |
+| Apache Spark | Motor de processamento distribuído. |
+| Apache Flink | Motor de processamento de streams e eventos. |
+| Apache Beam | Modelo unificado para pipelines batch e streaming. |
+| Apache Pulsar | Plataforma de mensageria e streaming distribuído. |
+| RabbitMQ | Broker de mensageria. |
+| Amazon Kinesis | Serviços de streaming gerenciados na AWS. |
+| Google Cloud Dataflow | Serviço gerenciado de processamento de pipelines Apache Beam. |
+| Amazon EMR | Plataforma gerenciada para frameworks de processamento distribuído. |
+| Azure Event Hubs | Serviço gerenciado de ingestão de eventos. |
+
+### 3.4. Containers, infraestrutura e execução
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| ocker | Empacota aplicações e suas dependências em containers. |
+| Docker Compose | Define e executa aplicações com múltiplos containers. |
+| Kubernetes | Orquestra containers em clusters. |
+| Helm | Gerencia aplicações Kubernetes por meio de charts. |
+| Terraform | Provisiona infraestrutura por meio de configuração declarativa. |
+| OpenTofu | Ferramenta de infraestrutura como código compatível com o ecossistema Terraform. |
+| Ansible | Automatiza configuração e administração de infraestrutura. |
+| Linux | Sistema operacional comum em ambientes de dados. |
+| WSL2 | Executa um ambiente Linux integrado ao Windows. |
+| Make | Automatiza comandos de build e tarefas de projeto. |
+
+### 3.5. Governança, catálogo e linhagem
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| OpenLineage | Padrão aberto para registrar metadados de execução e linhagem. |
+| DataHub | Catálogo de dados, metadados, descoberta e governança. |
+| OpenMetadata | Plataforma aberta de catálogo, governança e observabilidade de metadados. |
+| Apache Atlas | Gerenciamento de metadados e governança no ecossistema Hadoop. |
+| Amundsen | Catálogo de dados de código aberto. |
+| Marquez | Plataforma de metadados e linhagem relacionada ao ecossistema OpenLineage. |
+| Monte Carlo | Plataforma comercial de observabilidade de dados. |
+| Soda | Ferramentas de qualidade e observabilidade de dados. |
+| Great Expectations | Framework de validação de qualidade. |
+| dbt | Transformações analíticas, documentação e testes de modelos. |
+
+### 3.6. Visualização e consumo dos dados
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Power BI | Criação de relatórios e dashboards. |
+| Tableau | Visualização e análise visual de dados. |
+| Qlik Sense | Analytics e visualização de dados. |
+| Looker | Plataforma de BI e modelagem analítica. |
+| Metabase | BI e consultas para usuários de negócio. |
+| Apache Superset | Plataforma de exploração e visualização de dados. |
+| Streamlit | Criação de aplicações interativas em Python. |
+| Dash | Aplicações analíticas interativas com Python. |
+| Plotly | Gráficos interativos. |
+| Matplotlib | Gráficos estáticos e visualização científica. |
+| Seaborn | Visualização estatística baseada em Matplotlib. |
+
+
