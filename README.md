@@ -202,3 +202,47 @@
 
 ## 2. Desenvolvimento — grupo dev
 
+> Estas ferramentas são utilizadas durante a implementação, testes, revisão e manutenção do código. Em um projeto Poetry, podem ser declaradas no grupo dev para não serem instaladas como dependências regulares quando esse grupo for excluído.
+
+### 2.1. Testes
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| pytest | Framework principal para escrever e executar testes automatizados. |
+| pytest-cov | Mede a cobertura dos testes por meio do Coverage.py. |
+| coverage | Calcula e gera relatórios de cobertura de código. |
+| pytest-mock | Integra mocks ao pytest. |
+| unittest.mock | Ferramenta de simulação incluída na biblioteca padrão do Python. |
+| responses | Simula requisições HTTP feitas com requests. |
+| requests-mock	Simula | respostas HTTP para testes de código que usa requests. |
+| respx | Simula requisições feitas com HTTPX. |
+| freezegun | Congela ou controla datas e horários durante os testes. |
+| time-machine | Controla o tempo em testes automatizados. |
+| factory-boy | Gera objetos de teste por meio de factories. |
+| Faker | Gera dados fictícios para testes e desenvolvimento. |
+| Hypothesis | Testes baseados em propriedades, gerando muitos casos de entrada automaticamente. |
+| testcontainers | Cria dependências de teste em containers, como bancos de dados, quando Docker e os recursos necessários estão disponíveis. |
+| pytest-xdist | Executa testes em paralelo. |
+| pytest-randomly | Altera a ordem dos testes para ajudar a revelar dependências ocultas. |
+| pytest-timeout | Impõe limites de tempo aos testes. |
+| schemathesis | Testa APIs automaticamente a partir de seus schemas. |
+| moto | Simula vários serviços AWS para testes. |
+| vcrpy | Grava e reproduz interações HTTP em testes. |
+
+### 2.2. Formatação, lint e qualidade do código
+
+| Tecnologia | Descrição |
+| ---------- | --------- |
+| Ruff | Linter e formatador Python de alto desempenho; pode substituir várias ferramentas tradicionais. |
+| Black | Formata código Python de maneira consistente. |
+| isort | Organiza imports. |
+| Flake8 | Analisa estilo e possíveis problemas no código. |
+| Pylint | Analisa erros, convenções e qualidade do código. |
+| autopep8 | Ajusta a formatação para seguir o PEP 8. |
+| pycodestyle | Verifica aspectos de estilo PEP 8. |
+| pyflakes | Detecta erros comuns, como imports e variáveis não utilizados. |
+| mccabe | Avalia complexidade ciclomática. |
+| eradicate | Detecta código comentado que pode ser desnecessário. |
+| refurb | Sugere melhorias e expressões mais idiomáticas em Python. |
+| vulture | Procura código potencialmente não utilizado.
+| codespell | Detecta erros de grafia em código e documentação. |
